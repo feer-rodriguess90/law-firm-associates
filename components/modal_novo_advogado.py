@@ -38,3 +38,34 @@ layout = dbc.Modal([
 
 # ======= Callbacks ======== #
 # Callback para adicionar novos advogados
+@app.callback(
+    Output('store_adv', 'data'),
+    Output('div_erro2', 'children'),
+    Output('div_erro2', 'style'),
+    Input('save_button_novo_advogado', 'n_clicks'),
+    State('store_adv', 'data'),
+    State('adv_nome', 'value'),
+    State('adv_oab', 'value'),
+    State('adv_cpf', 'value')
+)
+def novo_adv(n, dataset, nome, oab, cpf):
+    erro = []
+    style = {}
+
+    if n:
+        if None in [nome, oab, cpf]:
+            return dataset, ["Todos dados são obrigatórios para registro!"], {'margin-bottom': '15px', 'color': 'red'}
+        
+        df_adv = pd.DataFrame(dataset)
+
+        if oab in df_adv['OAB'].values:
+            return dataset, ["Número de OAB ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red'}
+        elif cpf in df_adv['CPF'].values:
+            return dataset, ["Número de CPF ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red'}
+        elif nome in df_adv['Advogado'].values:
+            return dataset, [f"Nome {nome} ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red'}
+        
+        df_adv.loc[df_adv.shape[0]] = [nome, oab, cpf]
+        dataset = df_adv.to_dict()
+        return dataset, ["Cadastro realizado com sucesso!"], {'margin-bottom': '15px', 'color': 'green'}
+    return dataset, erro, style
