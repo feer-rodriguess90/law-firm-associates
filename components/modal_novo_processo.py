@@ -121,7 +121,7 @@ layout = dbc.Modal([
                 ]),
                 dbc.Row([
                     dbc.Col([
-                        dcc.Dropdown(id='input_local_arquivo', clearable=False, className="btn btn-outline-success", placeholder="Local de Arquivo/Local Físico",
+                        dcc.Dropdown(id='input_local_arquivo', clearable=False, className="dbc", placeholder="Local de Arquivo/Local Físico",
                             options=['Armário Principal', 'Armário 17 gaveta 2', 'Armário 5 gaveta 1', 'Arquivo 01', 'Arquivo 02']),
                     ], sm=12, md=5, style={'padding': '15px'}),
                     dbc.Col([
@@ -134,7 +134,7 @@ layout = dbc.Modal([
                 dbc.Button("Cancelar", id="cancel_button_novo_processo", color="danger", className="btn btn-outline-danger"),
                 dbc.Button("Salvar", id="save_button_novo_processo", color="success", className="btn btn-outline-success"),
             ]),
-        ], id="modal_processo", size="lg", is_open=True)
+        ], id="modal_processo", size="lg", is_open=False)
 
 
 
