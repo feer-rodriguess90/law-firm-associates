@@ -1,4 +1,5 @@
 import dash
+import plotly.express as px
 from dash import html, dcc
 from dash.dependencies import Input, Output, State
 import dash_bootstrap_components as dbc
@@ -21,11 +22,10 @@ layout = dbc.Modal([
                 ])
             ]),
             dbc.ModalFooter([
-                dbc.Button("Sair", id="quit_button", color="danger", className="btn btn-outline-danger"),
-                dbc.Button("Novo", id="new_adv_button", color="success", className="btn btn-outline-success")
+                dbc.Button("Sair", id="quit_button", color="danger"),
+                dbc.Button("Novo", id="new_adv_button", color="success")
             ])
-        ], id="modal_lawyers", size="lg", is_open=False) 
-            
+        ], id="modal_lawyers", size="lg", is_open=False)
 
 
 # ====== Callbacks ======= #

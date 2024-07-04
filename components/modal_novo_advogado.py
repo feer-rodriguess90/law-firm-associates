@@ -9,7 +9,7 @@ from app import app
 
 # ========= Layout ========= #
 layout = dbc.Modal([
-            dbc.ModalHeader(dbc.ModalTitle("Adicione um Advogado")),
+            dbc.ModalHeader(dbc.ModalTitle("Adicione Um Advogado")),
             dbc.ModalBody([
                 dbc.Row([
                     dbc.Col([
@@ -30,8 +30,8 @@ layout = dbc.Modal([
                 html.H5(id='div_erro2')
             ]),
             dbc.ModalFooter([
-                dbc.Button("Cancelar", id="cancel_button_novo_advogado", color="danger", className="btn btn-outline-danger"),
-                dbc.Button("Salvar", id="save_button_novo_advogado", color="success", className="btn btn-outline-success")
+                dbc.Button("Cancelar", id="cancel_button_novo_advogado", color="danger"),
+                dbc.Button("Salvar", id="save_button_novo_advogado", color="success")
             ])
         ], id="modal_new_lawyer", size="lg", is_open=False)
 
@@ -51,21 +51,20 @@ layout = dbc.Modal([
 def novo_adv(n, dataset, nome, oab, cpf):
     erro = []
     style = {}
-
     if n:
         if None in [nome, oab, cpf]:
-            return dataset, ["Todos dados são obrigatórios para registro!"], {'margin-bottom': '15px', 'color': 'red'}
+            return dataset, ["Todos dados são obrigatórios para registro!"], {'margin-bottom': '15px', 'color': 'red', 'text-shadow': '2px 2px 8px #000000'}
         
         df_adv = pd.DataFrame(dataset)
 
         if oab in df_adv['OAB'].values:
-            return dataset, ["Número de OAB ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red'}
+            return dataset, ["Número de OAB ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red', 'text-shadow': '2px 2px 8px #000000'}
         elif cpf in df_adv['CPF'].values:
-            return dataset, ["Número de CPF ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red'}
+            return dataset, ["Número de CPF ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red', 'text-shadow': '2px 2px 8px #000000'}
         elif nome in df_adv['Advogado'].values:
-            return dataset, [f"Nome {nome} ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red'}
+            return dataset, [f"Nome {nome} ja existe no sistema!"], {'margin-bottom': '15px', 'color': 'red', 'text-shadow': '2px 2px 8px #000000'}
         
         df_adv.loc[df_adv.shape[0]] = [nome, oab, cpf]
         dataset = df_adv.to_dict()
-        return dataset, ["Cadastro realizado com sucesso!"], {'margin-bottom': '15px', 'color': 'green'}
+        return dataset, ["Cadastro realizado com sucesso!"], {'margin-bottom': '15px', 'color': 'green', 'text-shadow': '2px 2px 8px #000000'}
     return dataset, erro, style
