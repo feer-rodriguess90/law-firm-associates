@@ -1,4 +1,4 @@
-# ⚙ In Progess
+# ⚖ Law Firm Associates - WebApp
 
 ## Project Description
 In this project, a web application will be developed for a law firm agency that allows the visualization and filtering of judicial cases. Additionally, the project allows adding new cases and lawyers to a database for display on the dashboard. To achieve this, databases and CRUD (Create, Read, Update, Delete) structures will be used.
@@ -39,6 +39,19 @@ Make sure you have the following software installed on your machine:
 3. **Access the Web Application**:
 
     Open your web browser and go to `http://127.0.0.1:8050/` to view the application running.
+---
+### WepApp Layout and Features
+
+- Add new process
+- Add and Remove Lawyer
+- Search the process by number, status, instance, client ID, and lawyer
+- Process Information
+
+![]()
+
+### Adding a New Process
+
+![]()
 
 ---
 ### Additional Information
