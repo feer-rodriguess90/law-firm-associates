@@ -47,13 +47,22 @@ Make sure you have the following software installed on your machine:
 - Search the process by number, status, instance, client ID, and lawyer
 - Process Information
 
-![]()
+![](https://github.com/feer-rodriguess90/law-firm-associates/blob/main/Images/HomePage.png)
 
-### Adding a New Process
+### - Adding a New Process
 
-![]()
+![](https://github.com/feer-rodriguess90/law-firm-associates/blob/main/Images/AddNewProcess.png)
 
 ---
-### Additional Information
 
+## ✍🏼 Additional Notes
+> [!IMPORTANT]
+> - In case of sensitive bugs like security vulnerabilities, please contact <br>
+    feer.rodriguess90@gmail.com directly instead of using issue tracker. <br>
+    We value your effort to improve the security and privacy of this project! <br>
+
+---
+### 📩 Additional Information
+
+Thank you for exploring this portfolio project! <br>
 If you have any questions or need further assistance, feel free to contact me.
