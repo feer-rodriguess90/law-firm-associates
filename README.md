@@ -68,7 +68,7 @@ Thank you for exploring this portfolio project! <br>
 If you have any questions or need further assistance, feel free to contact me.
 
 
-### Happy coding! 👩🏽‍💻 
+### 👩🏽‍💻 Happy coding!  
 Let's connect! <br/>
 [![linkedin](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/datavizwithfer/) 
 [![medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@DataVizWithFer)
