@@ -61,8 +61,18 @@ Make sure you have the following software installed on your machine:
     feer.rodriguess90@gmail.com directly instead of using issue tracker. <br>
     We value your effort to improve the security and privacy of this project! <br>
 
----
-### 📩 Additional Information
+
+## 📩 Additional Information
 
 Thank you for exploring this portfolio project! <br>
 If you have any questions or need further assistance, feel free to contact me.
+
+
+### Happy coding! 👩🏽‍💻 
+Let's connect! <br/>
+[![linkedin](https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/datavizwithfer/) 
+[![medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@DataVizWithFer)
+
+<div align="center">
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" />
+</div>
